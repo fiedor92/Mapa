@@ -14,6 +14,12 @@
 		2663C2671B651BF9009A45F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2661B651BF9009A45F0 /* Images.xcassets */; };
 		2663C26A1B651BF9009A45F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2681B651BF9009A45F0 /* LaunchScreen.xib */; };
 		2663C2761B651BF9009A45F0 /* MapaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2751B651BF9009A45F0 /* MapaTests.swift */; };
+		2663C2881B651C0C009A45F0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2871B651C0C009A45F0 /* InterfaceController.swift */; };
+		2663C28A1B651C0C009A45F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2891B651C0C009A45F0 /* Images.xcassets */; };
+		2663C28E1B651C0C009A45F0 /* Mapa WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2663C28D1B651C0C009A45F0 /* Mapa WatchKit App.app */; };
+		2663C2961B651C0C009A45F0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2941B651C0C009A45F0 /* Interface.storyboard */; };
+		2663C2981B651C0C009A45F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2971B651C0C009A45F0 /* Images.xcassets */; };
+		2663C29B1B651C0C009A45F0 /* Mapa WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2663C2831B651C0C009A45F0 /* Mapa WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,35 @@
 			remoteGlobalIDString = 2663C2561B651BF9009A45F0;
 			remoteInfo = Mapa;
 		};
+		2663C28F1B651C0C009A45F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2663C24F1B651BF9009A45F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2663C28C1B651C0C009A45F0;
+			remoteInfo = "Mapa WatchKit App";
+		};
+		2663C2991B651C0C009A45F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2663C24F1B651BF9009A45F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2663C2821B651C0C009A45F0;
+			remoteInfo = "Mapa WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2663C2A21B651C0C009A45F0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2663C29B1B651C0C009A45F0 /* Mapa WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2663C2571B651BF9009A45F0 /* Mapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +72,14 @@
 		2663C26F1B651BF9009A45F0 /* MapaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2663C2741B651BF9009A45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2663C2751B651BF9009A45F0 /* MapaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaTests.swift; sourceTree = "<group>"; };
+		2663C2831B651C0C009A45F0 /* Mapa WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mapa WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2663C2861B651C0C009A45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2663C2871B651C0C009A45F0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2663C2891B651C0C009A45F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2663C28D1B651C0C009A45F0 /* Mapa WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapa WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2663C2931B651C0C009A45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2663C2951B651C0C009A45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2663C2971B651C0C009A45F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2663C2801B651C0C009A45F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +112,8 @@
 			children = (
 				2663C2591B651BF9009A45F0 /* Mapa */,
 				2663C2721B651BF9009A45F0 /* MapaTests */,
+				2663C2841B651C0C009A45F0 /* Mapa WatchKit Extension */,
+				2663C2911B651C0C009A45F0 /* Mapa WatchKit App */,
 				2663C2581B651BF9009A45F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +123,8 @@
 			children = (
 				2663C2571B651BF9009A45F0 /* Mapa.app */,
 				2663C26F1B651BF9009A45F0 /* MapaTests.xctest */,
+				2663C2831B651C0C009A45F0 /* Mapa WatchKit Extension.appex */,
+				2663C28D1B651C0C009A45F0 /* Mapa WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +168,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2663C2841B651C0C009A45F0 /* Mapa WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2663C2871B651C0C009A45F0 /* InterfaceController.swift */,
+				2663C2891B651C0C009A45F0 /* Images.xcassets */,
+				2663C2851B651C0C009A45F0 /* Supporting Files */,
+			);
+			path = "Mapa WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2663C2851B651C0C009A45F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2663C2861B651C0C009A45F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2663C2911B651C0C009A45F0 /* Mapa WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2663C2941B651C0C009A45F0 /* Interface.storyboard */,
+				2663C2971B651C0C009A45F0 /* Images.xcassets */,
+				2663C2921B651C0C009A45F0 /* Supporting Files */,
+			);
+			path = "Mapa WatchKit App";
+			sourceTree = "<group>";
+		};
+		2663C2921B651C0C009A45F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2663C2931B651C0C009A45F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +214,12 @@
 				2663C2531B651BF9009A45F0 /* Sources */,
 				2663C2541B651BF9009A45F0 /* Frameworks */,
 				2663C2551B651BF9009A45F0 /* Resources */,
+				2663C2A21B651C0C009A45F0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2663C29A1B651C0C009A45F0 /* PBXTargetDependency */,
 			);
 			name = Mapa;
 			productName = Mapa;
@@ -153,6 +244,39 @@
 			productReference = 2663C26F1B651BF9009A45F0 /* MapaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2663C2821B651C0C009A45F0 /* Mapa WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2663C29F1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit Extension" */;
+			buildPhases = (
+				2663C27F1B651C0C009A45F0 /* Sources */,
+				2663C2801B651C0C009A45F0 /* Frameworks */,
+				2663C2811B651C0C009A45F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2663C2901B651C0C009A45F0 /* PBXTargetDependency */,
+			);
+			name = "Mapa WatchKit Extension";
+			productName = "Mapa WatchKit Extension";
+			productReference = 2663C2831B651C0C009A45F0 /* Mapa WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2663C28C1B651C0C009A45F0 /* Mapa WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2663C29C1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit App" */;
+			buildPhases = (
+				2663C28B1B651C0C009A45F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mapa WatchKit App";
+			productName = "Mapa WatchKit App";
+			productReference = 2663C28D1B651C0C009A45F0 /* Mapa WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +292,12 @@
 					2663C26E1B651BF9009A45F0 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 2663C2561B651BF9009A45F0;
+					};
+					2663C2821B651C0C009A45F0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2663C28C1B651C0C009A45F0 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -186,6 +316,8 @@
 			targets = (
 				2663C2561B651BF9009A45F0 /* Mapa */,
 				2663C26E1B651BF9009A45F0 /* MapaTests */,
+				2663C2821B651C0C009A45F0 /* Mapa WatchKit Extension */,
+				2663C28C1B651C0C009A45F0 /* Mapa WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +337,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2663C2811B651C0C009A45F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2663C28A1B651C0C009A45F0 /* Images.xcassets in Resources */,
+				2663C28E1B651C0C009A45F0 /* Mapa WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2663C28B1B651C0C009A45F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2663C2961B651C0C009A45F0 /* Interface.storyboard in Resources */,
+				2663C2981B651C0C009A45F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +379,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2663C27F1B651C0C009A45F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2663C2881B651C0C009A45F0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +394,16 @@
 			isa = PBXTargetDependency;
 			target = 2663C2561B651BF9009A45F0 /* Mapa */;
 			targetProxy = 2663C2701B651BF9009A45F0 /* PBXContainerItemProxy */;
+		};
+		2663C2901B651C0C009A45F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2663C28C1B651C0C009A45F0 /* Mapa WatchKit App */;
+			targetProxy = 2663C28F1B651C0C009A45F0 /* PBXContainerItemProxy */;
+		};
+		2663C29A1B651C0C009A45F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2663C2821B651C0C009A45F0 /* Mapa WatchKit Extension */;
+			targetProxy = 2663C2991B651C0C009A45F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +422,14 @@
 				2663C2691B651BF9009A45F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2663C2941B651C0C009A45F0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2663C2951B651C0C009A45F0 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -396,6 +572,62 @@
 			};
 			name = Release;
 		};
+		2663C29D1B651C0C009A45F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Mapa_WatchKit_Extension;
+				INFOPLIST_FILE = "Mapa WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2663C29E1B651C0C009A45F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Mapa_WatchKit_Extension;
+				INFOPLIST_FILE = "Mapa WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		2663C2A01B651C0C009A45F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mapa WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2663C2A11B651C0C009A45F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mapa WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,6 +653,22 @@
 			buildConfigurations = (
 				2663C27D1B651BF9009A45F0 /* Debug */,
 				2663C27E1B651BF9009A45F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2663C29C1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2663C29D1B651C0C009A45F0 /* Debug */,
+				2663C29E1B651C0C009A45F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2663C29F1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2663C2A01B651C0C009A45F0 /* Debug */,
+				2663C2A11B651C0C009A45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
