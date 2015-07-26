@@ -11,7 +11,10 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    var location = CLLocationCoordinate2D(latitude: 54.44321, longitude: 18.56)
+    
+    
     @IBOutlet weak var map: WKInterfaceMap!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -24,9 +27,7 @@ class InterfaceController: WKInterfaceController {
         let region = MKCoordinateRegion(center: location, span: span)
         map.setRegion(region)
         
-        
-        
-        
+        map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
         
         // Configure interface objects here.
     }
@@ -39,6 +40,19 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+
+    @IBAction func zoomInMap(value: Float) {
+        let degrees:CLLocationDegrees = CLLocationDegrees(10-value) / 10
+        let span = MKCoordinateSpanMake(degrees, degrees)
+        let region = MKCoordinateRegion(center: location, span: span)
+        
+        map.setRegion(region)
+    }
+    
+    func updateMap(){
+        
     }
 
 }
