@@ -16,6 +16,11 @@
                                 <action selector="zoomInMap:" destination="AgC-eL-Hgc" id="xIc-KT-bDa"/>
                             </connections>
                         </slider>
+                        <button width="1" alignment="left" title="Where I am?" id="jVt-eP-fll">
+                            <connections>
+                                <action selector="LocationButton" destination="AgC-eL-Hgc" id="Js1-jm-1zd"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="map" destination="usW-rH-l19" id="bNA-bG-D9P"/>

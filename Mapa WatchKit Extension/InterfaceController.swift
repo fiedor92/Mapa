@@ -13,7 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     
     var location = CLLocationCoordinate2D(latitude: 54.44321, longitude: 18.56)
-    
+    var responseDict = [String:Double]()
     
     @IBOutlet weak var map: WKInterfaceMap!
     override func awakeWithContext(context: AnyObject?) {
@@ -54,5 +54,16 @@ class InterfaceController: WKInterfaceController {
     func updateMap(){
         
     }
-
+    @IBAction func LocationButton() {
+        WKInterfaceController.openParentApplication(["Lat": 0, "Lon": 0]) { (reply, error) -> Void in
+            if let responseMessage = reply["Message"] as? Dictionary<String, Double>{
+                var location = CLLocationCoordinate2D(latitude: responseMessage["lat"]!, longitude: responseMessage["lon"]!)
+                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+                
+                let region = MKCoordinateRegion(center: location, span: span)
+                self.map.setRegion(region)
+            }
+        }
+    }
+    
 }

@@ -11,7 +11,7 @@ import CoreData
 import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
     let locationManager = CLLocationManager()
@@ -20,9 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
         
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
         return true
     }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!){
+        
+        //manager.stopUpdatingLocation()
+        let coordinates = manager.location.coordinate
+        
+        println("location: \(coordinates.latitude) ; \(coordinates.longitude)")
+    }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -110,6 +124,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+            let coords = ["lat": locationManager.location.coordinate.latitude, "lon": locationManager.location.coordinate.longitude]
+            reply(["Message": coords])
+
+        }
+
+        
+            }
 
 }
 
