@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E616EFD6-C07D-4A1F-88B4-3E249072F97E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mapa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4647D21AD054F1EF78854BCD1C965AEFD762AAEC</key>
+		<string>https://github.com/fiedor92/Mapa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mapa.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4647D21AD054F1EF78854BCD1C965AEFD762AAEC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fiedor92/Mapa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4647D21AD054F1EF78854BCD1C965AEFD762AAEC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4647D21AD054F1EF78854BCD1C965AEFD762AAEC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mapa</string>
+		</dict>
+	</array>
+</dict>
+</plist>

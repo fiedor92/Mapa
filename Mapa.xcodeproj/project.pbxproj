@@ -20,6 +20,7 @@
 		2663C2961B651C0C009A45F0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2941B651C0C009A45F0 /* Interface.storyboard */; };
 		2663C2981B651C0C009A45F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2971B651C0C009A45F0 /* Images.xcassets */; };
 		2663C29B1B651C0C009A45F0 /* Mapa WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2663C2831B651C0C009A45F0 /* Mapa WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2685A9911B7F323700B2666D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2685A9901B7F323700B2666D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		2663C2931B651C0C009A45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2663C2951B651C0C009A45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2663C2971B651C0C009A45F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2685A9901B7F323700B2666D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2685A9911B7F323700B2666D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +113,7 @@
 		2663C24E1B651BF9009A45F0 = {
 			isa = PBXGroup;
 			children = (
+				2685A9901B7F323700B2666D /* CoreLocation.framework */,
 				2663C2591B651BF9009A45F0 /* Mapa */,
 				2663C2721B651BF9009A45F0 /* MapaTests */,
 				2663C2841B651C0C009A45F0 /* Mapa WatchKit Extension */,
@@ -647,6 +651,7 @@
 				2663C27B1B651BF9009A45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2663C27C1B651BF9009A45F0 /* Build configuration list for PBXNativeTarget "MapaTests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +660,7 @@
 				2663C27E1B651BF9009A45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2663C29C1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +669,7 @@
 				2663C29E1B651C0C009A45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2663C29F1B651C0C009A45F0 /* Build configuration list for PBXNativeTarget "Mapa WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +678,7 @@
 				2663C2A11B651C0C009A45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
